@@ -119,51 +119,61 @@ $(() => {
 
 
 
-	const repairSliders = [],
-		repair = document.querySelectorAll('.repair .swiper-container')
+	
+    var swiper = new Swiper(".services .swiper-container", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
 
-	repair.forEach(function (el, i) {
-		el.classList.add('repair_s' + i)
 
-		let options = {
-			loop: true,
-			speed: 500,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			preloadImages: false,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			lazy: {
-				enabled: true,
-				checkInView: true,
-				loadOnTransitionStart: true,
-				loadPrevNext: true
-			},
-			breakpoints: {
-				0: {
-					spaceBetween: 0,
-					slidesPerView: 1
-				},
-				580: {
-					spaceBetween: 15,
-					slidesPerView: 2
-				},
-				1023: {
-					spaceBetween: 15,
-					slidesPerView: 3
-				},
-				1280: {
-					spaceBetween: 19,
-					slidesPerView: 3
-				}
-			}
-		}
+	// const repairSliders = [],
+	// 	repair = document.querySelectorAll('.services .swiper-container')
 
-		repairSliders.push(new Swiper('.repair_s' + i, options))
-	})
+	// repair.forEach(function (el, i) {
+	// 	el.classList.add('repair_s' + i)
+
+	// 	let options = {
+	// 		loop: true,
+	// 		speed: 500,
+	// 		watchSlidesProgress: true,
+	// 		slideActiveClass: 'active',
+	// 		slideVisibleClass: 'visible',
+	// 		preloadImages: false,
+	// 		navigation: {
+	// 			nextEl: '.swiper-button-next',
+	// 			prevEl: '.swiper-button-prev'
+	// 		},
+	// 		lazy: {
+	// 			enabled: true,
+	// 			checkInView: true,
+	// 			loadOnTransitionStart: true,
+	// 			loadPrevNext: true
+	// 		},
+	// 		breakpoints: {
+	// 			0: {
+	// 				spaceBetween: 0,
+	// 				slidesPerView: 1
+	// 			},
+	// 			580: {
+	// 				spaceBetween: 15,
+	// 				slidesPerView: 2
+	// 			},
+	// 			1023: {
+	// 				spaceBetween: 15,
+	// 				slidesPerView: 3
+	// 			},
+	// 			1280: {
+	// 				spaceBetween: 19,
+	// 				slidesPerView: 3
+	// 			}
+	// 		}
+	// 	}
+
+	// 	repairSliders.push(new Swiper('.repair_s' + i, options))
+	// })
 
 
 	const projectSliders = [],
