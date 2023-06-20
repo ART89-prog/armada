@@ -1,0 +1,31 @@
+@media print, (max-width: 1187px) {
+
+    header .menu .item a {
+        margin-right: 11px;
+    }
+    .header_right {
+        margin-left: auto;
+    }
+    .repair .swiper-button-prev {
+        left: -16px;
+    }
+    .repair .swiper-button-next {
+        right: -16px;
+    }
+    .callback_wrap {
+        margin-left: 0;
+    }
+    footer .menu .item a {
+        margin-right: 15px;
+    }
+    .header_logo {
+        margin-right: 10px;
+    }
+    header .btn {
+        width: 185px;
+    }
+
+
+
+
+}

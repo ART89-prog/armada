@@ -1,0 +1,270 @@
+@media print, (max-width: 767px) {
+
+    .steps_items {
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .steps_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .steps_item + .steps_item {
+        margin-top: 24px;
+    }
+    footer .menu {
+        display: none;
+    }
+    .footer_politic {
+        display: none;
+    }
+    .contacts_items {
+        background: url(../images/contact_bg_mob.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 360px;
+        height: 341px;
+        top: 37%;
+        left: 0;
+        padding: 121px 34px 25px;
+    }
+    .map_wrap {
+        height: 567px;
+    }
+    .map_wrap iframe {
+        height: 100%;
+    }
+    .contacts_item-text.phone {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .contacts_item-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .contacts_item-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        padding: 5px;
+    }
+    .contacts_item-icon img {
+        width: 100%;
+    }
+    .contacts_item + .contacts_item {
+        margin-top: 9px;
+    }
+    .map_wrap .cont {
+        height: 100%;
+        position: static;
+    }
+    .first_section-box {
+        padding: 74px 15px 35px;
+        margin-bottom: 170px;
+    }
+    .slider__flex {
+        flex-direction: column-reverse;
+    }
+
+    .slider__col {
+        flex-direction: row;
+        align-items: start;
+        margin-right: 0;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .slider__images {
+        width: 100%;
+    }
+
+    .slider__thumbs {
+        height: 90px;
+        width: 100%;
+    }
+
+    .slider__prev,
+    .slider__next {
+        height: 25px;
+        width: 25px;
+    }
+
+    .slider .swiper-wrapper {
+        display: flex;
+        width: calc(100%/3 - 8px);
+    }
+    .slider__image {
+        margin-left: 0;
+    }
+
+    .slider__images {
+        height: 295px;
+    }
+    .modal_slider {
+        padding: 12px;
+    }
+
+    
+    .first_section-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 12px;
+        text-align: start;
+    }
+    .first_section ul li {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .first_section .info {
+        padding: 55px 18px 62px;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        top: 39%;
+    }
+    .swiper-button-next img, 
+    .swiper-button-prev img {
+        width: 7px;
+    }
+    .first_section .info::before {
+        width: calc(100% + 30px);
+    }
+    .first_section .cont {
+        padding: 0;
+    }
+    .first_section .swiper-button-prev {
+        left: 0;
+    }
+    .first_section .swiper-button-next {
+        right: 0;
+    }
+    .modal_callback {
+        padding: 40px 20px 40px;
+    }
+    .repair_item-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .repair_item-text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 13px;
+    }
+    .repair_item-link {
+        font-size: 14px;
+    }
+    .about_img {
+        width: 390px;
+        height: 385px;
+    }
+    .about_text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .about_items {
+        flex-direction: column;
+    }
+    .about_item+.about_item {
+        margin-left: 0px;
+        margin-top: 9px;
+    }
+    .about_item-icon {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
+    .about_item-icon img {
+        width: 100%;
+        height: 100%;
+    }
+    .callback_img {
+        width: 390px;
+        height: 378px;
+    }
+    .callback_text {
+        font-size: 14px;
+    }
+    .steps_item-title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 18px;
+    }
+    .accordion_item .head {
+        padding: 7px 20px 7px 15px;
+        border: 2px solid transparent;
+    }
+    .accordion .accordion_item.active .head {
+        border: 2px solid var(--bg);
+        margin-bottom: 18px;
+    }
+    .accordion .accordion_item .data {
+        font-size: 14px;
+    }
+    .repair {
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+    .about {
+        margin-bottom: 45px;
+        padding-top: 50px;
+    }
+    .project_item-title {
+        text-align: start;
+    }
+    .project {
+        padding: 50px 0 50px;
+    }
+    .steps {
+        padding: 50px 0 50px;
+    }
+    .faq {
+        padding: 50px 0 50px;
+    }
+    .about_item-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 15px;
+    }
+    .project_item-link {
+        font-size: 14px;
+    }
+    .accordion .accordion_item.active .head .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .accordion_item .head .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .contacts_items_title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        transform: rotate(0deg);
+        position: absolute;
+        top: 50px;
+        right: 60px;    
+    }
+    .contacts_item-text.email,
+    .contacts_item-text.email span {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    
+
+
+
+
+
+
+
+
+}
