@@ -24,6 +24,25 @@ $(() => {
 		})
 	}
 
+
+	if ($('.advantages .swiper-container').length) {
+		new Swiper('.advantages .swiper-container', {
+			loop: true,
+			speed: 750,
+			slidesPerView: 1,
+			effect: "fade",
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			}
+		})
+	}
+
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
@@ -120,12 +139,20 @@ $(() => {
 
 
 	
-    var swiper = new Swiper(".services .swiper-container", {
+    var swiper = new Swiper(".about .swiper-container", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+		// Показать контент 
+		$(".link-more").click(function (e) {
+			e.preventDefault();
+			$(".works_item").removeClass("hide");
+			$(".link-more").addClass("active");
+		});
   
 
 
