@@ -491,10 +491,12 @@ header .menu .item a:hover {
     font-size: 16px;
     line-height: 18px;
     color: #FFFFFF;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 .header_contact-text span {
     color: #ADE94B;
+    font-size: 14px;
+    line-height: 16px;
 }
 .header_contact-phone {
     display: flex;
@@ -517,7 +519,7 @@ header .menu .item a:hover {
     line-height: 16px;
     text-align: right;
     color: #FFB800;
-    margin-top: 11px;
+    margin-top: 6px;
     text-decoration: underline;
 }
 
@@ -525,10 +527,11 @@ header .menu .item a:hover {
 
 .first_section {
     position: relative;
+    margin-bottom: 180px;
 }
 .first_section .cont {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -543,7 +546,7 @@ header .menu .item a:hover {
     font-size: 48px;
     line-height: 64px;
     color: #FFFFFF;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 .first_section-title span {
     color: #FFB800;
@@ -564,7 +567,7 @@ header .menu .item a:hover {
 }
 .first_section ul {    
     list-style: none;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 .first_section ul li {
     position: relative;
@@ -576,7 +579,7 @@ header .menu .item a:hover {
     color: #FFFFFF;
 }
 .first_section ul li + li {
-    margin-top: 20px;
+    margin-top: 23px;
 }
 .first_section ul li::before {
     position: absolute;
@@ -602,7 +605,7 @@ header .menu .item a:hover {
 }
 .first_section .swiper-container {
     overflow: visible;
-    width: calc(100% - 610px);
+    width: calc(100% - 630px);
 }
 .first_section .swiper-slide {
     width: 710px;
@@ -683,18 +686,16 @@ header .menu .item a:hover {
 
 
 .services {
+    margin-bottom: 180px;
 }
-.cont {
-}
-.block_head {
-}
+
 .block_head .subtitle {
     font-family: 'TT Commons';
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: #75777D;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     padding-left: 22px;
     position: relative;
 }
@@ -703,7 +704,7 @@ header .menu .item a:hover {
     content: "";
     width: 12px;
     height: 1px;
-    top: 5px;
+    top: 7px;
     left: 0;
     background: #75777D;
 }
@@ -713,6 +714,7 @@ header .menu .item a:hover {
     font-size: 48px;
     line-height: 64px;
     color: #FFFFFF;
+    margin-bottom: 40px;
 }
 .service_items {
     margin-left: -20px;
@@ -735,6 +737,16 @@ header .menu .item a:hover {
     overflow: hidden;
     padding-bottom: 150%;
 }
+.service_item-img:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(25, 28, 38, 0) 52.08%, #191C26 100%);
+    left: 0;
+    bottom: 0;    
+    z-index: 2;
+}
 .service_item-img img {    
     position: absolute;
     top: 0;
@@ -749,6 +761,7 @@ header .menu .item a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 3;
 }
 .service_item-title {
     font-family: 'TT Commons';
@@ -756,7 +769,7 @@ header .menu .item a:hover {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 .service_item-link {
     width: 91px;
@@ -767,7 +780,7 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 32px;
     text-transform: uppercase;
     color: #191C26;
     text-align: center;
@@ -778,8 +791,8 @@ header .menu .item a:hover {
     position: absolute; 
     transform: rotate(-90deg);
     padding: 20px;
-    top: 0;
-    left: 0;
+    top: 65px;
+    left: -65px;
 }
 .service_item-text span.white {
     font-family: 'TT Commons';
@@ -806,20 +819,64 @@ header .menu .item a:hover {
 
 
 
+.about {
+    margin-bottom: 80px;
+}
+.about .swiper-slide img {
+    border-radius: 10px;
+}
 .about_descript {
     font-family: 'TT Commons';
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+    margin-top: 80px;
+}
+.about .swiper-button-next,
+.about .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+    background: #FFB800;
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.about .swiper-button-next {
+    right: 75px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.about .swiper-button-prev {    
+    transition: all .4s;
+    left: 75px;
+    cursor: pointer;
+}
+
+.about .swiper-button-next img {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about .swiper-button-prev img {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 
 
 .advantages {
-}
-.cont {
+    margin-bottom: 180px;
 }
 .advantages_top {
     display: flex;
@@ -827,9 +884,9 @@ header .menu .item a:hover {
     width: 100%;
 }
 .advantages_info {
-    width: calc(100% - 692px);
+    width: calc(100% - 657px);
     flex-shrink: 0;
-    margin-right: 100px;
+    margin-right: 65px;
 }
 .advantages_title {
     font-family: 'PT Serif';
@@ -837,7 +894,7 @@ header .menu .item a:hover {
     font-size: 42px;
     line-height: 56px;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 .advantages_text p {
     font-family: 'TT Commons';
@@ -848,7 +905,7 @@ header .menu .item a:hover {
     color: #FFFFFF;  
 }
 .advantages_text p + p {
-    margin-top: 20px;
+    margin-top: 23px;
 }
 .advantages .swiper-container {
     flex-shrink: 0;
@@ -883,6 +940,7 @@ header .menu .item a:hover {
     flex-wrap: wrap;
     margin-left: -20px;
     margin-bottom: -40px;
+    margin-top: 75px;
 }
 .advantages ul > * {
     width: calc(100%/3 - 20px);
@@ -915,6 +973,7 @@ header .menu .item a:hover {
     background: rgba(79, 171, 234, 0.04);
     backdrop-filter: blur(3px);
     border-radius: 4px;
+    margin-top: 80px;
 }
 .advantages_wrap_text {
     font-family: 'TT Commons';
@@ -952,8 +1011,11 @@ header .menu .item a:hover {
 
 
 
-
 .works {
+    margin-bottom: 180px;
+}
+.works .block_head .title {
+    margin-bottom: 70px;
 }
 .works_item {
     position: relative;
@@ -1011,7 +1073,7 @@ header .menu .item a:hover {
     font-size: 22px;
     line-height: 25px;
     color: #FFFFFF;   
-    margin-bottom: 24px;
+    margin-bottom: 13px;
 }
 .works_item-link {
     width: 91px;
@@ -1022,7 +1084,7 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 32px;
     text-transform: uppercase;
     color: #191C26;
     text-align: center;
@@ -1045,7 +1107,7 @@ header .menu .item a:hover {
     text-transform: uppercase;
     color: #191C26;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 .link-more.active {
     display: none;
@@ -1053,9 +1115,10 @@ header .menu .item a:hover {
 
 
 .steps {
+    margin-bottom: 80px;
 }
 .steps_wrap {
-    padding: 40px;
+    padding: 27px 40px 40px;
     background: rgba(79, 171, 234, 0.06);
     backdrop-filter: blur(3px);
     border-radius: 4px;
@@ -1066,7 +1129,7 @@ header .menu .item a:hover {
     font-size: 42px;
     line-height: 56px;
     color: #FFFFFF; 
-    margin-bottom: 48px;
+    margin-bottom: 35px;
 }
 .steps_items {
     display: flex;
@@ -1097,7 +1160,7 @@ header .menu .item a:hover {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    right: -40px;
+    right: -37px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1113,6 +1176,7 @@ header .menu .item a:hover {
 
 
 .benefits {
+    margin-bottom: 180px;
 }
 .benefits .block_head .title {
     font-family: 'PT Serif';
@@ -1121,6 +1185,9 @@ header .menu .item a:hover {
     font-size: 28px;
     line-height: 37px;
     color: #FFFFFF;   
+}
+.benefits .block_head .subtitle {
+    margin-bottom: 10px;
 }
 .benefits_items {
     display: flex;
@@ -1164,12 +1231,94 @@ header .menu .item a:hover {
     line-height: 21px;
     color: #FFFFFF;
 }
-.benefits.blau .benefits_items > * {    
+.benefits_box:nth-child(2) .benefits_items > * {    
     border: 2px solid #437EB4;
+}
+.benefits_box:nth-child(2) {
+    margin-top: 70px;
 }
 
 
 
+
+
+.callback {
+    margin-bottom: 180px;
+}
+.cont {
+}
+.block_head .text {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+.callback_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 808px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 184, 0, 0.12);
+    border-radius: 12px;
+    padding: 50px;
+}
+.callback form {
+    padding: 39px 33px 37px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    max-width: 399px;
+    width: 100%;
+}
+.form_title {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #191C26;
+    margin-bottom: 35px;
+}
+.line {
+}
+.field {
+}
+.form_politic {
+}
+.callback_manager {
+    position: relative;
+}
+.callback_manager-img {
+
+}
+.callback_manager-img img {
+    background: linear-gradient(207.81deg, rgba(25, 28, 38, 0) 55.42%, #191C26 98.76%), url(image.png);
+    box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.17);
+    border-radius: 19px;
+}
+.callback_manager-info {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+}
+.callback_manager-name {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFB800;
+    margin-bottom: 6px;
+}
+.callback_manager-post {
+    font-family: 'TT Commons';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
 
 
 
@@ -1267,80 +1416,6 @@ header .menu .item a:hover {
     transform: rotate(180deg);
 }
 
-
-
-
-
-
-
-
-
-
-form {
-    max-width: 440px;
-    z-index: 2;
-}
-
-form .line {
-    margin-bottom: 40px;
-    width: 100%;
-}
-
-form .line .field {
-    width: 100%;
-}
-
-form .line .field input {
-    border: none;
-    border-bottom: 1px solid #024873;
-    padding-bottom: 7px;
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    width: 100%;
-}
-
-form .line .field input:focus {
-    border-bottom: 1px solid var(--bg);
-}
-
-form .line .field textarea {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #024873;
-    resize: none;
-    height: 35px;
-}
-
-form .line .field textarea:focus {
-    border-bottom: 1px solid var(--bg);
-}
-
-form button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    max-width: 242px;
-    height: 50px;
-    width: 100%;
-    background: var(--bg);
-    transition: all .4s;
-    border: 2px solid transparent;
-}
-
-form button:hover {
-    border: 2px solid var(--bg);
-    background: #fff;
-    color: var(--text_color);
-}
 
 
 
