@@ -1001,7 +1001,7 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 16px;
-    line-height: 46px;
+    line-height: 52px;
     text-transform: uppercase;
     color: #191C26;
     text-decoration: none;
@@ -1245,8 +1245,6 @@ header .menu .item a:hover {
 .callback {
     margin-bottom: 180px;
 }
-.cont {
-}
 .block_head .text {
     font-family: 'PT Serif';
     font-weight: 400;
@@ -1281,17 +1279,48 @@ header .menu .item a:hover {
     color: #191C26;
     margin-bottom: 35px;
 }
-.line {
+.callback form .line {
+    margin-bottom: 18px;
 }
-.field {
+.callback form .line .field input {
+    width: 100%;
+    padding: 0 23px;
+    font-family: 'TT Commons';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #191C26;
+    border-radius: 4px;
+    border: 1px solid #437EB4;
+    height: 52px;
+}
+.callback form button {
+    width: 100%;
+    height: 78px;
+    background: #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2), 0px 6px 20px rgba(255, 184, 0, 0.16);
+    border-radius: 4px;   
+    font-family: 'TT Commons';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 82px;
+    text-transform: uppercase;
+    color: #191C26;
+    margin-bottom: 16px;
 }
 .form_politic {
+    font-family: 'TT Commons';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #191C26;
+}
+.form_politic a {
+    color: #FFB800;
+    text-decoration: none;
 }
 .callback_manager {
     position: relative;
-}
-.callback_manager-img {
-
 }
 .callback_manager-img img {
     background: linear-gradient(207.81deg, rgba(25, 28, 38, 0) 55.42%, #191C26 98.76%), url(image.png);
@@ -1323,7 +1352,7 @@ header .menu .item a:hover {
 
 
 .faq {
-
+    margin-bottom: 180px;
 }
 .accordion {
     column-gap: 20px;
@@ -1420,15 +1449,96 @@ header .menu .item a:hover {
 
 
 
-
+.contacts {
+    margin-bottom: 180px;
+}
+.contacts .cont {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts_info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: calc(100% - 900px);
+}
+.contacts_phone {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;   
+    text-decoration: none;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.contacts_phone img,
+.contacts_mail img {
+    margin-right: 11px;
+}
+.contacts_mail {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #FFB800;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.contacts_adres {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.contacts_adres + .contacts_adres {
+    margin-top: 20px;
+}
+.contacts_soc {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.contacts_soc-title {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FFFFFF; 
+    margin-bottom: 18px;
+}
+.contacts_soc-links {
+    display: flex;    
+}
+.contacts_soc-links a + a {
+    margin-left: 8px;
+} 
+.contacts .btn {
+    width: 305px;
+    height: 78px;
+    background: #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2), 0px 6px 20px rgba(255, 184, 0, 0.16);
+    border-radius: 4px;
+    font-family: 'TT Commons';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #191C26;  
+}
 .map_wrap {
     position: relative;
     max-width: 100%;
     transform: translateZ(0);
-    width: 100%;
-    height: 628px;
+    width: 796px;
+    height: 507px;
+    border-radius: 8px;
+    overflow: hidden;
 }
-
 #map {
     position: absolute;
     top: 0;
@@ -1436,6 +1546,42 @@ header .menu .item a:hover {
     width: 100%;
     height: 100%;
 }
+
+
+
+
+footer .cont {
+    padding-top: 53px;
+    border-top: 4px solid #FFFFFF;
+}
+.footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo {
+}
+.menu {
+}
+.item {
+}
+.scroll {
+}
+.header_contact {
+}
+.header_contact-phone {
+}
+.btn {
+}
+.modal_link {
+}
+.footer_bottom {
+}
+.footer_copy {
+}
+
+
+
 
 
 .modal_slider {
