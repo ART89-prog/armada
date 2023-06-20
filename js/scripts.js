@@ -5,6 +5,7 @@ $(() => {
 		new Swiper('.first_section .swiper-container', {
 			loop: true,
 			speed: 750,
+			slidesPerView: 1,
 			effect: "fade",
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
@@ -17,7 +18,8 @@ $(() => {
 			},
 			pagination: {
 				el: '.swiper-pagination',
-				type: 'fraction'
+				type: 'fraction',
+				clickable: true
 			}
 		})
 	}
