@@ -165,16 +165,27 @@ $(() => {
 
     var swiper = new Swiper(".slider__thumbs .swiper", {
       spaceBetween: 20,
-	  slidesPerView: 10,
+	  slidesPerView: 8,
       freeMode: true,
       watchSlidesProgress: true,
+	  breakpoints: {
+		0: {
+			spaceBetween: 15,
+			slidesPerView: 2
+		},
+		767: {
+			spaceBetween: 15,
+			slidesPerView: 3
+		},
+		1023: {
+			spaceBetween: 15,
+			slidesPerView: 5
+		}
+	}
     });
     var swiper2 = new Swiper(".slider__images .swiper", {
       spaceBetween: 0,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+	  slidesPerView: 1,
 	  grabCursor: true,
       thumbs: {
         swiper: swiper,

@@ -363,7 +363,8 @@
         padding: 0;
         border: none;
     }
-    .callback {
+    .callback,
+    .calculator {
         margin-bottom: 120px;
     }
     .faq {
@@ -418,7 +419,7 @@
     }
     .modal_slider-list li + li {
         margin-left: 0px;
-        margin-top: 32px;
+        margin-top: 24px;
     }
     .modal_slider-text {
         margin-top: 36px;
