@@ -953,6 +953,10 @@ header .menu .item a:hover {
 }
 .advantages .swiper {
     flex-shrink: 0;
+    height: 100%;
+}
+.advantages .swiper-slide img {
+    height: 100%;
 }
 .advantages .swiper-pagination {
     padding: 9px 14px;
@@ -1554,6 +1558,7 @@ header .menu .item a:hover {
     margin-bottom: 14px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 .contacts_phone img,
 .contacts_mail img {
