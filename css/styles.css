@@ -717,6 +717,7 @@ header .menu .item a:hover {
 .first_section .swiper {
     overflow: visible;
     width: calc(100% - 630px);
+    height: 707px;
 }
 
 .first_section .swiper-slide {
