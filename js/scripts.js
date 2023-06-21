@@ -127,6 +127,16 @@ $(() => {
 		}
 	})
 
+
+
+
+	$(window).scroll(function(){
+		if($(window).scrollTop()>180){
+			$('#top').fadeIn(900)
+		}else{
+			$('#top').fadeOut(700)
+		}
+	});
 	
 
 	// Скрол к пунктам меню
@@ -135,7 +145,7 @@ $(() => {
 		let id = $(this).attr("href");
 
 		$("html, body").animate({
-			scrollTop: $(id).offset().top
+			scrollTop: $(id).offset().top - 82
 		}, {
 			duration: 400,
 			easing: "swing"

@@ -455,6 +455,9 @@
     .about .swiper-button-next {
         right: 15px;
     }
+    #top {
+        display: none !important;
+    }
 
 
 
