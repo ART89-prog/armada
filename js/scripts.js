@@ -6,7 +6,10 @@ $(() => {
 			loop: true,
 			speed: 750,
 			slidesPerView: 1,
-			effect: "fade",
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -30,7 +33,10 @@ $(() => {
 			loop: true,
 			speed: 750,
 			slidesPerView: 1,
-			effect: "fade",
+			effect: 'fade',
+			fadeEffect: {
+			crossFade: true
+			},
 			watchSlidesVisibility: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',

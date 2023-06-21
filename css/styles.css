@@ -527,10 +527,12 @@ header .menu .item a:hover {
     text-align: right;
     color: #FFB800;
     margin-top: 6px;
-    text-decoration: underline;
+    border-bottom: 2px solid #5E4B1B;
 }
-
-
+.header_contact .btn:hover {
+    border-bottom: 2px solid #FFB800;
+    box-shadow: 0px 1px 2px rgba(255, 184, 0, 0.4);
+}
 
 .first_section {
     position: relative;
@@ -609,6 +611,14 @@ header .menu .item a:hover {
     line-height: 78px;
     text-transform: uppercase;
     color: #191C26;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.first_section .btn:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 .first_section .swiper {
     overflow: visible;
@@ -787,10 +797,18 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 28px;
     text-transform: uppercase;
     color: #191C26;
     text-align: center;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.service_item-link:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 .service_item-text {
     display: flex;  
@@ -1008,11 +1026,19 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 16px;
-    line-height: 52px;
+    line-height: 46px;
     text-transform: uppercase;
     color: #191C26;
     text-decoration: none;
     text-align: center;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.advantages_wrap_link:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 
 
@@ -1091,10 +1117,18 @@ header .menu .item a:hover {
     font-family: 'TT Commons';
     font-weight: 700;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 28px;
     text-transform: uppercase;
     color: #191C26;
     text-align: center;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.works_item-link:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 .works_item.hide {
     display: none;
@@ -1115,6 +1149,14 @@ header .menu .item a:hover {
     color: #191C26;
     text-decoration: none;
     margin: 40px auto 0;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.link-more:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 .link-more.active {
     display: none;
@@ -1318,6 +1360,14 @@ header .menu .item a:hover {
     text-transform: uppercase;
     color: #191C26;
     margin-bottom: 16px;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.callback form button:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 .form_politic {
     font-family: 'TT Commons';
@@ -1540,7 +1590,16 @@ header .menu .item a:hover {
     line-height: 78px;
     text-transform: uppercase;
     color: #191C26;  
+    transition: all .4s;
+    border: 2px solid transparent;
 }
+.contacts .btn:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
+}
+
 .map_wrap {
     position: relative;
     max-width: 100%;
@@ -1591,6 +1650,9 @@ footer .menu .item a {
     white-space: nowrap;
     margin-right: 40px;
 }
+footer .menu .item a:hover {
+    color: #FFB800;
+}
 .footer_contact-phone {
     display: flex;
     align-items: center;
@@ -1601,6 +1663,10 @@ footer .menu .item a {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all .4s;
+}
+.footer_contact-phone:hover {
+    color: #FFB800;
 }
 .footer_contact-phone img {
     margin-right: 11px;
@@ -1613,7 +1679,11 @@ footer .menu .item a {
     text-align: right;
     color: #FFB800;
     margin-top: 6px;
-    text-decoration: underline;
+    border-bottom: 2px solid #5E4B1B;
+}
+.footer_contact .btn:hover {
+    border-bottom: 2px solid #FFB800;
+    box-shadow: 0px 1px 2px rgba(255, 184, 0, 0.4);
 }
 .footer_contact-mail {
     font-family: 'PT Serif';
@@ -1700,8 +1770,19 @@ footer .menu .item a {
     line-height: 70px;
     text-transform: uppercase;
     color: #191C26;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.modal_slider-btn:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
 }
 
+.modal_slider {
+    display: none;
+}
 .modal_slider .cont {
     padding: 0;
 }
@@ -1731,8 +1812,113 @@ footer .menu .item a {
 .fancybox__content>.carousel__button.is-close {
     top: 28px;
     right: 28px;
+    width: 49px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 2px solid #FFB800;
+    border-radius: 4px;    
+}
+.fancybox__content>.carousel__button.is-close:hover {
+    background: #5E6067;
+    border: 2px solid #5E4B1B;
+    border-radius: 4px;
+    transition: all .4s;
 }
 
 
+
+
+.modal_callback {
+    background: #FFFFFF;
+    border-radius: 6px;
+    max-width: 493px;
+    width: 100%;
+    padding: 101px 16px 71px;
+    display: none;
+}
+.modal_callback-title {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    color: #191C26;
+    margin-bottom: 34px;
+}
+.modal_callback-text {
+    font-family: 'TT Commons';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #191C26;
+    margin-bottom: 50px;
+}
+.modal_form .line {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.modal_form .field {
+    display: flex;
+    flex-direction: column;
+}
+.modal_form-politic {
+    font-family: 'TT Commons';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #191C26;
+    margin-top: 24px;
+}
+.modal_form-politic a {
+    color: #437EB4;
+    text-decoration: none;
+}
+.modal_form label {
+    font-family: 'TT Commons';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191C26;
+    margin-bottom: 12px;
+    width: 100%;
+    display: block;
+}
+.modal_form .field input {
+    height: 77px;
+    border-radius: 4px;
+    border: 2px solid #437EB4;
+    padding: 0 33px;
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #191C26;
+    opacity: 0.8;
+}
+.modal_form button {
+    background: #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2), 0px 6px 20px rgba(255, 184, 0, 0.16);
+    border-radius: 4px;
+    font-family: 'TT Commons';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #191C26;
+    width: 100%;
+    height: 89px;
+    text-align: center;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.modal_form button:hover {
+    border: 2px solid #FFB800;
+    box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2);
+    color: #FFB800;
+    background: transparent;
+}
 
 
