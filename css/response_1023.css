@@ -6,234 +6,67 @@
     }    */
     
 
-   
-    header .mob_menu_btn {
-        display: flex;
-        order: 1;
-    }
+
     header .menu {
-        position: fixed;
-        z-index: 666;
-        top: 0;
-        left: 0;
-        display: flex;
-        overflow: auto;
         width: 100%;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 83px 22px 46px;        
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-        background: #fff;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-    }
-    header .menu.show {
-        transform: translateX(0);
-    }
-    header .close_btn {
-        display: flex;
-    }
-    .menu_open header .mob_menu_btn {
-        display: none;
-    }
-    header .menu .item {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    header .menu .item + .item {
-        margin-left: 0;
-    }
-    header .menu .item > a {
-        text-align: start;
-        color: #333;
-    }  
-    .mob_menu_btn span {
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 2px;
-        transition: background .2s linear;
-        background: #000; 
-    }
-    .mob_menu_btn span:before, 
-    .mob_menu_btn span:after {
-        position: absolute;
-        top: -8px;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        content: '';
-        transition: .2s linear;
-        background: #000;
-    }
-    .mob_menu_btn span:after {
-        top: 8px;
-    }
-    .mob_menu_btn.active span {
-        background: transparent;
-    }
-    .mob_menu_btn.active span:before {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .mob_menu_btn.active span:after {
-        top: 0;
-        transform: rotate(-45deg);
-    }
-    .menu_open header {
-        background: #2A292F;
-    }
-    header .close_btn {
-        display: none;
-    }
-    .menu_open header .close_btn {
-        display: block;
-        top: 7px;
-        right: 7px;
-        z-index: 999;
-        position: absolute;
-    }
-
-
-    .header_contact-phone {
-        font-size: 18px;
-    }
-    .header_right-mob {
-        display: flex !important;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .header_right {
-        display: none;
-    }
-    header .btn {
-        width: 228px;
-        order: -1;
-        margin-top: 20px;
-    }
-    .header_soc {
         order: 1;
-        margin-top: 22px;
+        margin-top: 45px;
     }
-    .header_contact {
-        margin-top: 25px;
-    }
-    .header_right {
-        margin-left: 0;
-    }
-    .header_logo {
-        width: 86px;
-        height: 53px;
-    }
-    .header_logo img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .first_section-items {
-        overflow: auto;
-    }
-    .first_section-items::-webkit-scrollbar { 
-        width: 0;
-    }
-    .first_section-items { 
-        -ms-overflow-style: none;
-    }
-    .first_section-items { 
-        overflow: -moz-scrollbars-none; 
-    }
-    .first_section-items > * {
-        width: calc(212px - 10px);
-        flex-shrink: 0;
-    }
-    .first_section ul {
-        margin-left: 0;
-    }
-    .about_wrap {
-        flex-direction: column-reverse;
-    }
-    .about_img {
-        margin: 0 auto;
-    }
-    .about_info {
-        width: 100%;
-    }
-    .callback_wrap {
-        flex-direction: column-reverse;
-    }
-    .callback_info {
-        width: 100%;
-    }
-    .callback form {
-        max-width: 100%;
-    }
-    .steps_item:nth-child(1) .steps_item-icon:before,
-    .steps_item:nth-child(2) .steps_item-icon:before,
-    .steps_item:nth-child(3) .steps_item-icon:before {
-        display: none;
-    }
-    .steps_items {
-        margin-left: -30px;
-    }
-    .steps_items > * {
-        width: calc(100%/2 - 30px);
-        margin-left: 30px;
-    }
-    .callback_text p br {
-        display: none;
-    }
-    .accordion_item .data {
-        padding-left: 0;
-    }
-    .footer_right {        
-        flex-direction: column;
+    header .cont {
         flex-wrap: wrap;
     }
-    .footer_soc {
-        margin-top: 0;
-    }
-    .footer_soc a {
-        margin-right: 0;
-    }
-    .footer_soc a + a {
-        margin-left: 10px;
-    }
-    .footer_contact-email {
+
+    .first_section-title {
+        font-size: 44px;
+        line-height: 58px;
+        margin-bottom: 32px;
         text-align: center;
     }
-    .footer_contact {
-        margin-left: 0;
+    header .cont {
+        padding-bottom: 43px;
     }
-    .footer_logo {
-        margin-left: 0;
+    .first_section {
+        margin-top: 60px;
     }
-    .title {
-        font-size: 22px;
-        line-height: 27px;
-        margin-bottom: 22px;
-    }
-    .accordion_item .head {
+    .first_section-wrap {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    .repair_item-info {
-        padding: 0 10px 27px;
+    .service_items > * {
+        width: calc(100%/2 - 20px);
     }
-    .accordion .accordion_item.active .head .title {
-        font-size: 17px;
-        line-height: 20px;
+    .about .swiper-button-next {
+        right: 28px;
     }
-    .accordion_item .head .title {
-        font-size: 17px;
-        line-height: 20px;
+    .about .swiper-button-prev {    
+        left: 28px;
     }
+    .about_descript {
+        margin-top: 51px;
+    }
+    .steps_items > * {
+        width: calc(100%/2 - 36px);
+    }
+    .advantages_top {
+        flex-direction: column;
+    }
+    .advantages_info {
+        width: 100%;
+        flex-shrink: 0;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .advantages .swiper-slide {
+        width: 100% !important;
+    }
+    .advantages .swiper-slide img {
+        width: 100%;
+    }
+    .advantages ul > * {
+        width: calc(100%/2 - 20px);
+    }
+
    
 
 

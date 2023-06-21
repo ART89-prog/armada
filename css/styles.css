@@ -437,17 +437,28 @@ header .close_btn {
     flex-wrap: wrap;
     z-index: 103;
 }
-
+header .close_btn {
+    width: 49px;
+    height: 49px;
+    background: #FFFFFF;
+    opacity: 0.3;
+    border: 1px solid #FFB800;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 header .close_btn img {
     display: block;
-    width: 30px;
-    height: 30px;
+    margin: 0 auto;
 }
 
 header {
     padding: 29px 0 0px;
 }
-
+.header_contact-mob {
+    display: none;
+}
 header .cont {
     display: flex;
     align-items: center;
@@ -473,6 +484,9 @@ header .menu .item a {
     transition: all .4s;
     white-space: nowrap;
     margin-right: 28px;
+}
+header .menu .item a:last-child {
+    margin-right: 0;
 }
 header .menu .item a:hover {
     color: #FFB800;
@@ -547,7 +561,7 @@ header .menu .item a:hover {
 .first_section-wrap {
     width: calc(100% - 610px);
     flex-shrink: 0;
-    z-index: 9999;
+    z-index: 111;
 }
 .first_section-title {
     font-family: 'PT Serif';
@@ -576,28 +590,32 @@ header .menu .item a:hover {
 }
 .first_section ul {    
     list-style: none;
-    margin-bottom: 48px;
+    margin-bottom: 48px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .first_section ul li {
     position: relative;
-    padding-left: 36px;
     font-family: 'TT Commons';
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 .first_section ul li + li {
     margin-top: 23px;
 }
-.first_section ul li::before {
-    position: absolute;
-    content: "";
-    width: 24px;
-    height: 24px;
-    left: 0;
-    top: -4px;
-    background: url(../images/check.svg);
+.first_section ul li img {
+    margin-right: 12px;
+    display: block;
+}
+.first_section ul li span {
+    display: block;
+    margin-top: 4px;
 }
 .first_section .btn {
     width: 271px;
@@ -737,6 +755,7 @@ header .menu .item a:hover {
     margin-left: -20px;
     margin-bottom: -20px;
     display: flex;
+    flex-wrap: wrap;
 }
 .service_items > * {
     width: calc(100%/4 - 20px);
@@ -943,6 +962,7 @@ header .menu .item a:hover {
     display: flex;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    max-width: 134px;
 }
 .advantages .swiper-pagination-bullet {
     background: linear-gradient(90deg, #437EB4 0%, #50AFEF 100%);

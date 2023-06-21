@@ -1,270 +1,168 @@
 @media print, (max-width: 767px) {
 
-    .steps_items {
-        margin-left: 0px;
-        margin-bottom: 0;
-    }
-    .steps_items > * {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0;
-    }
-    .steps_item + .steps_item {
-        margin-top: 24px;
-    }
-    footer .menu {
-        display: none;
-    }
-    .footer_politic {
-        display: none;
-    }
-    .contacts_items {
-        background: url(../images/contact_bg_mob.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        width: 360px;
-        height: 341px;
-        top: 37%;
-        left: 0;
-        padding: 121px 34px 25px;
-    }
-    .map_wrap {
-        height: 567px;
-    }
-    .map_wrap iframe {
-        height: 100%;
-    }
-    .contacts_item-text.phone {
-        font-size: 16px;
-        line-height: 19px;
-    }
-    .contacts_item-text {
-        font-size: 14px;
-        line-height: 17px;
-    }
-    .contacts_item-icon {
-        width: 32px;
-        height: 32px;
-        margin-right: 8px;
-        padding: 5px;
-    }
-    .contacts_item-icon img {
-        width: 100%;
-    }
-    .contacts_item + .contacts_item {
-        margin-top: 9px;
-    }
-    .map_wrap .cont {
-        height: 100%;
-        position: static;
-    }
-    .first_section-box {
-        padding: 74px 15px 35px;
-        margin-bottom: 170px;
-    }
-    .slider__flex {
-        flex-direction: column-reverse;
-    }
-
-    .slider__col {
-        flex-direction: row;
-        align-items: start;
-        margin-right: 0;
-        margin-top: 8px;
-        width: 100%;
-    }
-
-    .slider__images {
-        width: 100%;
-    }
-
-    .slider__thumbs {
-        height: 90px;
-        width: 100%;
-    }
-
-    .slider__prev,
-    .slider__next {
-        height: 25px;
-        width: 25px;
-    }
-
-    .slider .swiper-wrapper {
+    header .mob_menu_btn {
         display: flex;
-        width: calc(100%/3 - 8px);
+        order: 1;
     }
-    .slider__image {
+    header .menu {
+        position: fixed;
+        z-index: 666;
+        top: 0;
+        left: 0;
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 113px 22px 57px;        
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+        background: #fff;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    header .menu.show {
+        transform: translateX(0);
+    }
+    header .close_btn {
+        display: flex;
+    }
+    .menu_open header .mob_menu_btn {
+        display: none;
+    }
+    header .menu .item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    header .menu .item + .item {
         margin-left: 0;
     }
-
-    .slider__images {
-        height: 295px;
-    }
-    .modal_slider {
-        padding: 12px;
-    }
-
-    
-    .first_section-title {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 12px;
-        text-align: start;
-    }
-    .first_section ul li {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-    }
-    .first_section .info {
-        padding: 55px 18px 62px;
-    }
-    .swiper-button-next, 
-    .swiper-button-prev {
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
         width: 30px;
-        height: 30px;
-        top: 39%;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
     }
-    .swiper-button-next img, 
-    .swiper-button-prev img {
-        width: 7px;
-    }
-    .first_section .info::before {
-        width: calc(100% + 30px);
-    }
-    .first_section .cont {
-        padding: 0;
-    }
-    .first_section .swiper-button-prev {
+    .mob_menu_btn span:before, 
+    .mob_menu_btn span:after {
+        position: absolute;
+        top: -8px;
         left: 0;
-    }
-    .first_section .swiper-button-next {
-        right: 0;
-    }
-    .modal_callback {
-        padding: 40px 20px 40px;
-    }
-    .repair_item-title {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .repair_item-text {
-        font-size: 14px;
-        line-height: 22px;
-        margin-bottom: 13px;
-    }
-    .repair_item-link {
-        font-size: 14px;
-    }
-    .about_img {
-        width: 390px;
-        height: 385px;
-    }
-    .about_text {
-        font-size: 14px;
-        line-height: 26px;
-    }
-    .about_items {
-        flex-direction: column;
-    }
-    .about_item+.about_item {
-        margin-left: 0px;
-        margin-top: 9px;
-    }
-    .about_item-icon {
-        width: 80px;
-        height: 80px;
-        padding: 20px;
-    }
-    .about_item-icon img {
+        display: block;
         width: 100%;
         height: 100%;
+        content: '';
+        transition: .2s linear;
+        background: #000;
     }
-    .callback_img {
-        width: 390px;
-        height: 378px;
+    .mob_menu_btn span:after {
+        top: 8px;
     }
-    .callback_text {
-        font-size: 14px;
+    .mob_menu_btn.active span {
+        background: transparent;
     }
-    .steps_item-title {
-        font-size: 16px;
-        line-height: 19px;
-        margin-bottom: 18px;
+    .mob_menu_btn.active span:before {
+        top: 0;
+        transform: rotate(45deg);
     }
-    .accordion_item .head {
-        padding: 7px 20px 7px 15px;
-        border: 2px solid transparent;
+    .mob_menu_btn.active span:after {
+        top: 0;
+        transform: rotate(-45deg);
     }
-    .accordion .accordion_item.active .head {
-        border: 2px solid var(--bg);
-        margin-bottom: 18px;
+    .menu_open header {
+        background: #2A292F;
     }
-    .accordion .accordion_item .data {
-        font-size: 14px;
+    header .close_btn {
+        display: none;
     }
-    .repair {
-        margin-top: 50px;
-        padding-top: 50px;
-        margin-bottom: 20px;
-    }
-    .about {
-        margin-bottom: 45px;
-        padding-top: 50px;
-    }
-    .project_item-title {
-        text-align: start;
-    }
-    .project {
-        padding: 50px 0 50px;
-    }
-    .steps {
-        padding: 50px 0 50px;
-    }
-    .faq {
-        padding: 50px 0 50px;
-    }
-    .about_item-title {
-        font-size: 14px;
-        line-height: 18px;
-        margin-left: 15px;
-    }
-    .project_item-link {
-        font-size: 14px;
-    }
-    .accordion .accordion_item.active .head .title {
-        font-size: 14px;
-        line-height: 17px;
-    }
-    .accordion_item .head .title {
-        font-size: 14px;
-        line-height: 17px;
-    }
-    .contacts_items_title {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        color: #FFFFFF;
-        transform: rotate(0deg);
+    .menu_open header .close_btn {
+        display: block;
+        top: 27px;
+        right: 20px;
+        z-index: 999;
         position: absolute;
-        top: 50px;
-        right: 60px;    
     }
-    .contacts_item-text.email,
-    .contacts_item-text.email span {
+
+
+    .header_contact {
+        display: none;
+    }
+    header .menu .item a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #191C26;
+    }
+    .header_contact-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .header_contact-mob .header_contact-phone {
+        font-family: 'PT Serif';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #191C26;
+        margin-bottom: 7px;
+    }
+    .header_contact-mob .btn {
+        font-family: 'TT Commons';
+        font-weight: 700;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 16px;
+        color: #FFB800;
+        margin-top: 6px;
+        border-bottom: 1px solid rgba(255, 184, 0, 0.3);
+        text-decoration: none;
+        margin-bottom: 18px;
     }
-
-    
-
-
-
-
-
-
+    .header_contact-mob .header_contact-text {
+        font-family: 'TT Commons';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #191C26;
+        position: relative;
+        padding-left: 13px;
+        margin-top: 18px;
+    }
+    .header_contact-mob .header_contact-text span {
+        font-weight: 200;
+        color: #191C26;
+    }
+    .header_contact-mob .header_contact-text:before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: #ADE94B;
+        border-radius: 50%;
+        left: 0;
+        top: 4px;
+    }
+    .header_contact-soc {
+        margin-top: 37px;
+    }
+    .header_contact-soc a {
+        text-decoration: none;
+    }
+    .header_contact-soc a + a {
+        margin-left: 8px;
+    }
 
 
 }

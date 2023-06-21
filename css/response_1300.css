@@ -1,18 +1,7 @@
 @media print, (max-width: 1300px) {
 
 
-    .project .swiper-button-prev {
-        left: -15px;
-    }
-    .project .swiper-button-next {
-        right: -15px;
-    }
-    .repair .swiper-button-prev {
-        left: -15px;
-    }
-    .repair .swiper-button-next {
-        right: -15px;
-    }
+
 
 
 }
