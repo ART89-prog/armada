@@ -312,17 +312,17 @@
     .works_items > * {
         width: 100%;
         margin-left: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
     .works_items {
         margin-left: 0px;
-        margin-bottom: 0px;
-    }
-    .works_item + .works_item {
-        margin-top: 30px;
+        margin-bottom: -30px;
     }
     .works_item-info {
         padding: 24px;
+    }
+    .link-more {
+        width: 312px;
     }
     .works_item-title {
         font-weight: 500;
@@ -422,6 +422,16 @@
     }
     .modal_slider-text {
         margin-top: 36px;
+    }
+    .first_section .btn {
+        margin-right: auto;
+    }
+    .first_section ul {
+        width: 100%;
+    }
+    .about .swiper-slide img {
+        height: 420px;
+        object-fit: cover;
     }
 
 

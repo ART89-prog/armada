@@ -4,8 +4,10 @@
     .first_section .btn {
         width: 100%;
     }
-    .modal_slider-btn {
+    .modal_slider-btn,
+    .advantages_wrap_link {
         width: 100%;
     }
+
 
 }

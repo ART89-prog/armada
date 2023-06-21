@@ -946,7 +946,6 @@ header .menu .item a:hover {
     background: #FFB800;
     border-radius: 2px;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 999;
 }
 
