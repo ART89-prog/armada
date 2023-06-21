@@ -160,7 +160,23 @@
     }
     .first_section .swiper-slide {
         height: auto;
+    }    
+    .modal_slider-list {
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-bottom: -20px;
     }
+    .modal_slider-list > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .modal_slider-title {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+
 
     
 

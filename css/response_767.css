@@ -404,6 +404,25 @@
         margin-right: 0;
         margin-bottom: 30px;
     }
+    .modal_slider-list {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .modal_slider-list > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .modal_slider-info {
+        padding: 34px 14px 0px;
+    }
+    .modal_slider-list li + li {
+        margin-left: 0px;
+        margin-top: 32px;
+    }
+    .modal_slider-text {
+        margin-top: 36px;
+    }
 
 
 
