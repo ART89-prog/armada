@@ -146,10 +146,10 @@ $(() => {
 
 	
     var swiper = new Swiper(".about .swiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
     });
 
 

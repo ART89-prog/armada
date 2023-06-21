@@ -102,6 +102,7 @@
         line-height: 23px;
         text-align: center;
         color: #191C26;
+        text-transform: inherit;
     }
     .header_contact-mob {
         display: flex;
@@ -302,6 +303,7 @@
     .advantages_wrap_phone {
         font-size: 34px;
         line-height: 39px;
+        font-weight: 700;
     }
     .advantages {
         margin-bottom: 140px;
@@ -392,13 +394,13 @@
         text-align: center;
     }
     .footer_contact-phone {
-        margin-top: 20px;
+        margin-top: 35px;
     }
     .footer_contact .btn {
-        margin: 15px auto 0;
+        margin: 25px auto 0;
     }
     .footer_bottom {
-        margin-top: 10px;
+        margin-top: 25px;
         flex-direction: column;
     }
     .footer_contact-mail {
@@ -433,6 +435,25 @@
     .about .swiper-slide img {
         height: 420px;
         object-fit: cover;
+    }
+    .about .swiper-button-next, 
+    .about .swiper-button-prev {
+        width: 31px;
+        height: 31px;
+    }
+    .about .swiper-button-next img {
+        width: 24px;
+        height: 10px;
+    }
+    .about .swiper-button-prev img {
+        width: 24px;
+        height: 10px;
+    }
+    .about .swiper-button-prev {
+        left: 15px;
+    }
+    .about .swiper-button-next {
+        right: 15px;
     }
 
 
