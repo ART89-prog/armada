@@ -74,9 +74,8 @@
     .callback form {
         margin-top: 50px;
     }
-    .accordion {
-        column-gap: 0px;
-        columns: 1;
+    .accordion > * {
+        width: 100%;
     }
     .contacts .cont {
         flex-direction: column;

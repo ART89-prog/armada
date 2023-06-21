@@ -416,6 +416,44 @@ button {
 body.menu_open {
     overflow: hidden;
 }
+#top .mob_menu_btn {
+    display: none;
+    margin-right: 0px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 8;
+}
+
+#top .close_btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 103;
+}
+
+#top .close_btn {
+    width: 49px;
+    height: 49px;
+    background: #FFFFFF;
+    opacity: 0.3;
+    border: 1px solid #FFB800;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#top .close_btn img {
+    display: block;
+    margin: 0 auto;
+}
 
 header .mob_menu_btn {
     display: none;
@@ -578,7 +616,6 @@ header .menu .item a:hover {
 
 .first_section .cont {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -586,6 +623,7 @@ header .menu .item a:hover {
     width: calc(100% - 610px);
     flex-shrink: 0;
     z-index: 111;
+    margin-top: 43px;
 }
 
 .first_section-title {
@@ -664,6 +702,9 @@ header .menu .item a:hover {
     color: var(--text_color);
     transition: all .4s;
     border: 2px solid transparent;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .first_section .btn:hover {
@@ -987,7 +1028,6 @@ header .menu .item a:hover {
     background: url(../images/advantages_bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .advantages_top {
@@ -1373,7 +1413,6 @@ header .menu .item a:hover {
     background: url(../images/benefits_bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .benefits .block_head .title {
@@ -1453,7 +1492,6 @@ header .menu .item a:hover {
     background: url(../images/callback_bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .block_head .text {
@@ -2213,7 +2251,7 @@ footer .menu .item a:hover {
     width: 100%;
     padding: 11px 0 12px;
     background: #fff;
-    z-index: 9999;
+    z-index: 999;
 }
 #top .cont {
     display: flex;
