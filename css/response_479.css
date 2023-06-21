@@ -1,5 +1,8 @@
 @media (max-width: 479px) {
 
- 
+    .contacts .btn,
+    .first_section .btn {
+        width: 100%;
+    }
 
 }

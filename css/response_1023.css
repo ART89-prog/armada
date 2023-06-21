@@ -127,9 +127,11 @@
         padding: 0px 5px;
         font-size: 16px;
         line-height: 42px;
-        max-width: 212px;
+        width: 212px;
+        max-width: 100%;
         min-height: 42px;
         margin-bottom: 32px;
+        text-align: center;
     }
     .steps_title {
         font-size: 36px;
@@ -154,7 +156,10 @@
     .callback,
     .faq,
     .contacts {
-        margin-bottom: 120px;
+        margin-bottom: 140px;
+    }
+    .first_section .swiper-slide {
+        height: auto;
     }
 
     
