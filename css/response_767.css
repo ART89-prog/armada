@@ -202,7 +202,7 @@
     .about_descript {
         font-size: 16px;
         line-height: 18px;
-        margin-top: 69px;
+        margin-top: 40px;
     }
     .about {
         margin-bottom: 52px;
@@ -492,8 +492,33 @@
     #top .contact-phone {
         display: none;
     }
-
+    .first_section .swiper {
+        height: 350px;
+    }
+    .footer_copy {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .slider__images .swiper-button-next {
+        right: 14px;
+    }
     
+    .slider__images .swiper-button-prev {
+        left: 14px;
+    }
+    .slider__images .slider__image {
+        width: 100%;
+        height: 364px;
+    }
+    
+    .slider__images .slider__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slider__col {
+        margin-top: 15px;
+    }
 
 
 

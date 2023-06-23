@@ -8,6 +8,10 @@
     .advantages_wrap_link {
         width: 100%;
     }
+    .footer_copy {
+        font-size: 12px;
+        line-height: 14px;
+    }
 
 
 }

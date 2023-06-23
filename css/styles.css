@@ -659,6 +659,7 @@ header .menu .item a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: var(--font_family1);
 }
 
 .first_section ul li {
@@ -855,7 +856,11 @@ header .menu .item a:hover {
 .service_item {
     position: relative;
     display: block;
-    text-decoration: none;
+    text-decoration: none;    
+}
+
+.service_item:hover .service_item-img img {
+    transform: scale(1.15);
 }
 
 .service_item-img {
@@ -883,6 +888,7 @@ header .menu .item a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .4s;
 }
 
 .service_item-info {
@@ -1423,6 +1429,7 @@ header .menu .item a:hover {
     font-size: 28px;
     line-height: 37px;
     color: #FFFFFF;
+    margin-bottom: 28px;
 }
 
 .benefits .block_head .subtitle {
@@ -1503,7 +1510,9 @@ header .menu .item a:hover {
     color: #FFFFFF;
     margin-bottom: 75px;
 }
-
+.callback .block_head  {
+    text-align: center;
+}
 .callback_wrap {
     display: flex;
     align-items: center;
@@ -1550,6 +1559,10 @@ header .menu .item a:hover {
     height: 52px;
 }
 
+.callback form .line .field input:focus {
+    border: 1px solid #FFB800;
+}
+
 .callback form button {
     width: 100%;
     height: 78px;
@@ -1585,8 +1598,11 @@ header .menu .item a:hover {
 .form_politic a {
     color: #FFB800;
     text-decoration: none;
+    transition: all .4s;
 }
-
+.form_politic a:hover {
+    text-decoration: underline;
+}
 .callback_manager {
     position: relative;
 }
@@ -1633,7 +1649,9 @@ header .menu .item a:hover {
 .faq {
     margin-bottom: 180px;
 }
-
+.faq .block_head .title {
+    margin-bottom: 80px;
+}
 .accordion {
     margin-left: -20px;
     margin-bottom: -20px;
@@ -1752,7 +1770,7 @@ header .menu .item a:hover {
 }
 
 .contacts .block_head .title {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .contacts_info {
@@ -1791,13 +1809,16 @@ header .menu .item a:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    text-decoration-line: underline;
+    transition: all .4s;
     color: #FFB800;
     margin-bottom: 14px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
-
+.contacts_mail:hover {
+    text-decoration: underline;
+}
 .contacts_adres {
     font-family: var(--font_family2);
     font-weight: 400;
@@ -1972,13 +1993,16 @@ footer .menu .item a:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    text-decoration-line: underline;
+    text-decoration: none;
+    transition: all .4s;
     color: #FFB800;
     display: flex;
     align-items: center;
     margin-right: 123px;
 }
-
+.footer_contact-mail:hover {
+    text-decoration: underline;
+}
 .footer_contact-mail img {
     margin-right: 11px;
 }
@@ -2082,6 +2106,48 @@ footer .menu .item a:hover {
     background: transparent;
 }
 
+
+.slider__images .swiper-button-next,
+.slider__images .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    background: #FFB800;
+    border-radius: 2px;
+    top: 50%;
+    z-index: 999;
+}
+
+.slider__images .swiper-button-next {
+    right: 60px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.slider__images .swiper-button-prev {
+    transition: all .4s;
+    left: 60px;
+    cursor: pointer;
+}
+
+.slider__images .swiper-button-next img {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__images .swiper-button-prev img {
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .modal_slider {
     display: none;
 }
@@ -2119,14 +2185,14 @@ footer .menu .item a:hover {
     border: 2px solid #FFB800;
     border-radius: 4px;
     transition: all .4s;
-    background: #5E6067;
-    border: 2px solid #5E4B1B;
-    border-radius: 4px;
+    background: #FFFFFF;
+    border: 2px solid #FFB800;
+    border-radius: 4px;    
 }
 
 .fancybox__content>.carousel__button.is-close:hover {
-    background: #FFFFFF;
-    border: 2px solid #FFB800;
+    background: #5E6067;
+    border: 2px solid #5E4B1B;
     border-radius: 4px;
 }
 
@@ -2185,8 +2251,11 @@ footer .menu .item a:hover {
 .modal_form-politic a {
     color: #437EB4;
     text-decoration: none;
+    transition: all .4s;
 }
-
+.modal_form-politic a:hover {
+    color: #FFB800;
+}
 .modal_form label {
     font-family: var(--font_family1);
     font-weight: 500;
@@ -2211,7 +2280,9 @@ footer .menu .item a:hover {
     color: var(--text_color);
     opacity: 0.8;
 }
-
+.modal_form .field input:focus {
+    border: 2px solid #FFB800;
+}
 .modal_form button {
     background: #FFB800;
     box-shadow: 0px 12px 34px rgba(255, 184, 0, 0.2), 0px 6px 20px rgba(255, 184, 0, 0.16);

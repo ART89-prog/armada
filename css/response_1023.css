@@ -175,7 +175,9 @@
     #top .menu .item a {
         margin-right: 13px;
     }
-
+    .first_section ul {
+        align-items: center;
+    }
 
     
 

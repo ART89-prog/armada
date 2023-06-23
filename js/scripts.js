@@ -216,6 +216,10 @@ $(() => {
     var swiper2 = new Swiper(".slider__images .swiper", {
       spaceBetween: 0,
 	  slidesPerView: 1,
+	  navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
 	  grabCursor: true,
       thumbs: {
         swiper: swiper,
