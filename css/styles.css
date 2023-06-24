@@ -818,6 +818,7 @@ header .menu .item a:hover {
     margin-bottom: 3px;
     padding-left: 22px;
     position: relative;
+    display: inline-block;
 }
 
 .block_head .subtitle:before {
